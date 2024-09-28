@@ -1,0 +1,41 @@
+.main {
+    margin-top: 120px;
+    /* border-top: solid 1px red; */
+}
+
+
+@media (max-width:1399px) {
+    .main {
+        margin-top: 114px;
+    }
+}
+
+@media (max-width:1199px) {
+    .main {
+        margin-top: 108px;
+    }
+}
+
+@media (max-width:991px) {
+    .main {
+        margin-top: 141px;
+    }
+}
+
+@media (max-width:767px) {
+    .main {
+        margin-top: 84px;
+    }
+}
+
+@media (max-width:575px) {
+    .main {
+        margin-top: 72px;
+    }
+}
+
+@media (max-width:475px) {
+    .main {
+        margin-top: 92px;
+    }
+}

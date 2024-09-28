@@ -1,0 +1,31 @@
+
+<section id="header" class="header">
+    <div class="container flex">
+        <div class="brand ">
+            <a class="flex" routerLink="">
+                <img src="../../assets/img/logo/logo_optimo_mini.png" alt="" />
+                <div class="brand-name flex">
+                    <span class="brand-fname">
+                        Optimo
+                    </span>
+                    <span class="brand-lname">
+                        Infotech
+                    </span>
+                </div>
+            </a>
+        </div>
+        <nav [class.active]="collapseNavMenu">
+            <i class="bi bi-x-lg close" (click)="ToggleNavMenu()"></i>
+            <ul class="flex" (click)="OnMenuClick()">
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+                <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle" (click)="ToggleNavMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+    </div>
+</section>

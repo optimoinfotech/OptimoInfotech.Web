@@ -1,0 +1,8 @@
+.intro {
+    background-image: linear-gradient(var(--white-color), var(--color-6), var(--color-5));
+}
+
+p {
+    text-align: center;
+    color: var(--color-1);
+}

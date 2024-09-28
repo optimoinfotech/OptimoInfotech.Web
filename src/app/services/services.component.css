@@ -1,0 +1,69 @@
+section {
+    padding-bottom: 100px ;
+}
+
+.services {
+    background: var(--color-6);
+}
+
+h2{
+    border-bottom: solid 1px var(--color-7);
+    margin-bottom: 50px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-gap: 3rem;    /* Adjust the gap between grid items as needed */
+}
+
+.item {
+    padding: 0 50px;
+    flex: 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-plan {
+    background: var(--color-1);
+    padding-bottom: 50px !important;
+}
+
+    .project-plan h3 {
+        margin-top: 50px;
+        color: var(--white-color);
+    }
+
+    .project-plan p {
+        color: var(--color-5);
+    }
+
+    .project-plan .btn-default {
+        background: var(--color-4);
+    }
+
+
+
+@media screen and (min-width: 1100px) {
+    .item:not(:nth-child(3n)):not(:last-child) {
+        border-right: 1px solid var(--color-7);
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    .item {
+        flex: 1 40%;/* Two columns when screen size is below 1100px */
+    }
+
+    .item:nth-child(2n+1) {
+        border-right: 1px solid var(--color-7);
+    }
+}
+
+@media screen and (max-width: 599px) {
+   .item {
+        flex: 1 0 100%;/* One column when screen size is below 600px */
+        border: none !important;
+    }
+}

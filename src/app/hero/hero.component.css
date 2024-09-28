@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+.hero {
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 100px 0;
+}
+
+p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 991px) {
+    .flex {
+        gap: 1.5rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 7rem;
+    }
+}

@@ -1,0 +1,155 @@
+.container {
+    margin-bottom: 0;
+}
+
+.footer {
+    background: var(--color-1);
+    font-size: 0.9rem;
+    padding-top: 60px;
+}
+
+.footer .brand span {
+    background: var(--white-color);
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+.footer .brand span img {
+    max-height: 100px;
+}
+
+.footer h6 {
+    color: var(--white-color) !important;
+}
+
+.footer .footer-links ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-links ul i {
+    padding-right: 4px;
+    font-size: 0.6rem;
+    color: var(--color-6);
+}
+
+.footer .footer-links ul a {
+    font-size: 0.8rem;
+    color: var(--color-5);
+    line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+    color: var(--color-6);
+}
+
+.footer .footer-contact p {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: var(--color-5);
+}
+
+.footer .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--color-6);
+}
+
+
+
+.footer .brand.flex {
+    justify-content: center;
+}
+
+.footer .container.flex {
+    align-items: start;
+    gap: 50px;
+}
+
+
+@media (max-width:1199px) {
+
+    .footer .container.flex {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+
+        .footer .container.flex .footer-info {
+            text-align: center !important;
+        }
+
+            .footer .container.flex .footer-info .brand {
+                justify-content: center;
+            }
+}
+
+@media (max-width:991px) {
+
+        .footer .container.flex .footer-info {
+            flex-basis: 100% !important;
+        }
+
+        .footer .footer-links ul a,
+        .footer .footer-contact p ,
+        .footer .copyright {
+            font-size: 0.9rem;
+        }
+}
+
+@media (max-width: 767px) {
+   
+    .footer .brand img {
+        max-height: 70px;
+    }
+    .footer .container.flex{
+        justify-content: space-around;
+    }
+    .footer .container.flex .footer-links {
+        flex-basis: 30%;
+    }
+
+        .footer .container.flex .footer-contact {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        .footer .footer-links ul a,
+        .footer .footer-contact p ,
+        .footer .copyright {
+            font-size: 1.0rem;
+        }
+}
+
+@media (max-width: 575px) {
+
+    .footer .brand span {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+
+    .footer .brand img {
+        max-height: 70px;
+    }
+
+    .footer .container.flex .footer-links {
+        flex-basis: 100%;
+    }
+
+    .footer .container.flex .footer-contact {
+        text-align: left;
+    }
+
+    .footer .footer-links ul a,
+    .footer .footer-contact p ,
+    .footer .copyright {
+        font-size: 1.1rem;
+    }
+}

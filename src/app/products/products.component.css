@@ -1,0 +1,46 @@
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    padding: 50px;
+    background: var(--color-1);
+    border-radius: 50px;
+    flex: 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h3 {
+    color: var(--white-color);
+}
+
+p {
+    color: var(--color-5);
+}
+
+.item div{
+    margin-top: auto;
+}
+
+.btn-default {
+    background: var(--color-4);
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .item {
+        flex: 1 40%;/* Two columns when screen size is below 1100px */
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .item {
+        flex: 1 0 100%;/* One column when screen size is below 600px */
+    }
+}
